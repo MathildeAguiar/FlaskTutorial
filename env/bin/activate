@@ -46,7 +46,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV='/home/mathilde/Documents/LORIA/tutoFlask/FlaskTutorial/env'
+VIRTUAL_ENV='/home/mathilde/Documents/LORIA/concevez_un_site_avec_flask-P1C1(1)/flask_food_personality/env'
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

@@ -1,4 +1,3 @@
-# I will modify it when I define the new uml chart
 from flask_sqlalchemy import SQLAlchemy
 from .views import app
 import logging as lg
@@ -6,6 +5,11 @@ import enum
 
 # Create database connection object
 db = SQLAlchemy(app)
+
+class Gender(enum.Enum):
+    female = 0
+    other = 1
+    male = 2
 
 class Content(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -28,8 +32,3 @@ def init_db():
     db.session.add(Content("ハルジオン", Gender['female']))
     db.session.commit()
     lg.warning('Database initialized!')
-
-class Gender(enum.Enum):
-    female = 0
-    other = 1
-    male = 2

@@ -10,7 +10,7 @@ alias deactivate 'test $?_OLD_VIRTUAL_PATH != 0 && setenv PATH "$_OLD_VIRTUAL_PA
 # Unset irrelevant variables.
 deactivate nondestructive
 
-setenv VIRTUAL_ENV '/home/mathilde/Documents/LORIA/tutoFlask/FlaskTutorial/env'
+setenv VIRTUAL_ENV '/home/mathilde/Documents/LORIA/concevez_un_site_avec_flask-P1C1(1)/flask_food_personality/env'
 
 set _OLD_VIRTUAL_PATH="$PATH:q"
 setenv PATH "$VIRTUAL_ENV:q/bin:$PATH:q"

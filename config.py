@@ -8,4 +8,4 @@ SECRET_KEY = ";fpe6j+anFcilxi}|-i&ioBU"
 basedir = os.path.abspath(os.path.dirname(__file__))
 SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(basedir, 'app.db')
 
-#FB_APP_ID = 1200420960103822
+FB_APP_ID = 381439923079473
