@@ -29,7 +29,7 @@ def result():
     user_name = request.args.get('first_name') #taken out of Facebook URL
     uid = request.args.get('id')
     #description = "おめでとうございます！" + user_name + "餃子です。"
-    profile_pic = 'http://graph.facebook.com/' + uid + '/picture?type=large' 
+    profile_pic = "http://graph.facebook.com/" + uid + "/picture?type=large" 
 
     return render_template(
         'result.html',
