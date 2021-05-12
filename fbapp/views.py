@@ -4,7 +4,10 @@ app = Flask(__name__)
 
 app.config.from_object('config') #just config not config.py
 
+from .utils import find_content
+
 @app.route('/')
+
 
 @app.route('/index/')
 def index():
@@ -25,13 +28,13 @@ def result():
     gender = request.args.get('gender') 
     user_name = request.args.get('first_name') #taken out of Facebook URL
     uid = request.args.get('id')
-    description = "おめでとうございます！" + user_name + "餃子です。"
+    #description = "おめでとうございます！" + user_name + "餃子です。"
     profile_pic = 'http://graph.facebook.com/' + uid + '/picture?type=large' 
 
     return render_template(
         'result.html',
         user_name = user_name, 
-        description = description,
+        description = find_content(gender).description, #descriptions in the db are needed!!
         user_img = profile_pic #taken out of Facebook 
     )
 
