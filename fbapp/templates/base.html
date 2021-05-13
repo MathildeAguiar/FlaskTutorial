@@ -6,15 +6,18 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Faites le test ultime et découvrez qui vous êtes vraiment !">
+    <meta name="description" content="Ready to find out what delicious you are ? Connect to Facebook to find out !">
     <meta name="author" content="">
-    <title>Le test ultime !</title>
+    <title>食べ物の性格のテスト</title>
 
-    <meta property="og:title" content="Le test ultime !" />
+    <meta property="og:title" content="{{ page_title }}" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://le-test-ultime.hello-birds.com" />
-    <meta property="og:image" content="tmp/sample.jpg" />
-    <meta property="og:description" content="Faites le test ultime et découvrez qui vous êtes vraiment !" />
+    <meta property="og:url" content="{{ og_url }}" />
+    <meta property="og:image" content="{{ og_image }}" />
+    <meta property="og:description" content="{{ og_description }}" />
+    <meta property="fb:app_id" content="{{ config['FB_APP_ID'] }}">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
 
     <!-- Bootstrap Core CSS -->
     <link href="{{ url_for('static', filename='css/bootstrap/bootstrap.min.css') }}" rel="stylesheet">
@@ -48,7 +51,7 @@
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
-                  <a class="navbar-brand" href="/">Le test ultime !</a>
+                  <a class="navbar-brand" href="/">食べ物の性格のテスト</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
